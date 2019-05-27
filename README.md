@@ -16,6 +16,14 @@
 
   dependencies {
 	        implementation 'com.github.SuperDearKs:DownManager:1.0.0'
+		
+  
+             	implementation 'com.squareup.okhttp3:okhttp:3.6.0' 
+  
+  		implementation 'io.reactivex.rxjava2:rxandroid:2.0.1' 
+  
+  		implementation 'io.reactivex.rxjava2:rxjava:2.0.1' 
+  
 	}
 
 3、在你的AndroidManifest文件的application标签下添加 
@@ -52,10 +60,3 @@
                     }
                 });
 
- 5、引入
-    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
-    
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
-    
-    implementation 'io.reactivex.rxjava2:rxjava:2.0.1'
- 
