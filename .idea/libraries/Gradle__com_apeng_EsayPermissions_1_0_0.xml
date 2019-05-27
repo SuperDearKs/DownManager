@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.apeng:EsayPermissions-1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/EsayPermissions-1.0.0.aar/751fc078ac6d02636aba421779f0d58f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/EsayPermissions-1.0.0.aar/751fc078ac6d02636aba421779f0d58f/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.apeng/EsayPermissions/1.0.0/9b5b01bdb4b2b6a47501be9b0b679d465f6ea426/EsayPermissions-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
