@@ -50,6 +50,8 @@ public class DownloadManager {
 
     /**
      * 开始下载
+     * @param url 下载地址
+     * @param downFileCallback 进度回调接口
      */
     public void download(final String url, final DownFileCallback downFileCallback) {
         /*正在下载不处理*/
@@ -67,40 +69,6 @@ public class DownloadManager {
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
          final HttpService httpservice = retrofit.create(HttpService.class);
-
-//        ProgressDownSubscriber subscriber = httpservice.download("bytes=" + info.getReadlength() + "-", info.getUrl());
-        //Observable observable = ;
-               /* .subscribeOn(Schedulers.io())
-                .unsubscribeOn(Schedulers.io())
-                .map(new Function<ResponseBody, DownInfo>() {
-                    @Override
-                    public DownInfo apply(ResponseBody responsebody) {
-                        try {
-                            writecache(responsebody, file, info);
-                        } catch (IOException e) {
-                            *//*失败抛出异常*//*
-                            e.printStackTrace();
-                        }
-                        return info;
-                    }
-                })
-                *//*回调线程*//*
-                .observeOn(AndroidSchedulers.mainThread())
-                *//*数据回调*//*
-                .subscribeWith(new ProgressDownSubscriber<DownInfo>() {
-                    @Override
-                    public void onNext(DownInfo downInfo) {
-                        downFileCallback.onSuccess(downInfo);
-                        submap.remove(info.getUrl());
-                    }
-
-                    @Override
-                    public void onError(Throwable t) {
-                        downFileCallback.onFail(t.getMessage());
-                        submap.remove(info.getUrl());
-                    }
-                });
-*/
 
         ProgressDownSubscriber subscriber =
                 Observable.just(url)
